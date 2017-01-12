@@ -13,7 +13,8 @@
         error: 'toast-error',
         info: 'toast-info',
         success: 'toast-success',
-        warning: 'toast-warning'
+        warning: 'toast-warning',
+        critical: 'toast-critical'
       },
       maxOpened: 0,
       messageClass: 'toast-message',

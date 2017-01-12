@@ -351,6 +351,9 @@ describe('toastr', function() {
       toast = openToast('warning', 'foo');
       expect(toast).toHaveType('warning');
       intervalFlush();
+      toast = openToast('critical', 'foo');
+      expect(toast).toHaveType('critical');
+      intervalFlush();
     });
 
     it('allows to manually close a toast in code', function() {

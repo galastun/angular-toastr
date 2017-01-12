@@ -24,6 +24,7 @@
       remove: remove,
       success: success,
       warning: warning,
+      critical: critical,
       refreshTimer: refreshTimer
     };
 
@@ -64,6 +65,11 @@
 
     function warning(message, title, optionsOverride) {
       var type = _getOptions().iconClasses.warning;
+      return _buildNotification(type, message, title, optionsOverride);
+    }
+
+    function critical(message, title, optionsOverride) {
+      var type = _getOptions().iconClasses.critical;
       return _buildNotification(type, message, title, optionsOverride);
     }
 
